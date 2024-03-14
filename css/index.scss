@@ -1,0 +1,242 @@
+body{
+    img {
+        width: 100%;
+        display: block;
+    }
+    .wrap {
+        max-width: 1920px;
+        background: url('../img/bg.png')center center;
+        margin: 0 auto;
+    }
+}
+
+.inner{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    height: 870px;
+    background: url('../img/top_bg.png')center center no-repeat;
+    background-size: cover;
+
+    .front{
+        position: absolute;
+        width: 100%;
+        height: 870px;
+        background: url('../img/top_front.png')center center no-repeat;
+        background-size: cover;
+        z-index: 1000;
+        transform: translate3d(0,0,1000px);
+    }
+
+    .inner{
+        height: 870px;
+        >div{
+            position: absolute;
+        }
+        .child{
+            bottom: 115px;
+            left: 195px;
+            z-index: 0;
+        }
+        .title{
+            bottom: 530px;
+            left: 295px;
+        }
+        .logo{
+            top: 53px;
+            left: 53px;
+        }
+        .c1{
+            bottom: 570px;
+            left: 110px;
+            animation-delay: 0;
+            img{
+                animation-delay: 0;
+            }
+        }
+        .c2{
+            bottom: 380px;
+            left: 30px;
+            animation-delay: 0.3s;
+            img{
+                animation-delay: 0.3s;
+            }
+        }
+        .c3{
+            bottom: 200px;
+            left: 30px;
+            animation-delay: 0.2s;
+            img{
+                animation-delay: 0.2s;
+            }
+        }
+        .c4{
+            bottom: 670px;
+            right: 125px;
+            animation-delay: 0.3s;
+            img{
+                animation-delay: 0.3s;
+            }
+        }
+        .c5{
+            bottom: 500px;
+            right: 60px;
+            animation-delay: 0.5s;
+            img{
+                animation-delay: 0.5s;
+            }
+        }
+        .c6{
+            bottom: 320px;
+            right: 25px;
+            animation-delay: 0.2s;
+            img{
+                animation-delay: 0.2s;
+            }
+        }
+        
+    }
+}
+
+.prod {
+    .inner{
+        height: 1250px;
+        .pic{
+            width: 100%;
+        }
+        .tomom,.more,.go2web,.buy{
+            position: absolute;
+            cursor: pointer;
+        }
+        .tomom{
+            bottom: 252px;
+            left: 310px;
+        }
+        .more{
+            bottom: 145px;
+            left: 170px;
+        }
+        .go2web{
+            bottom: 145px;
+            left: 390px;
+        }
+        .buy{
+            bottom: 145px;
+            left: 610px;
+        }
+    }
+}
+
+.momsay {
+    .inner {
+        //height: 3340px;
+        padding-bottom: 285px;
+        .outerframe {
+            width: 88%;
+            //height: 3060px;
+            margin: 0 auto;
+            background-color: #fff; 
+            box-sizing: border-box;
+            border: 16px solid #f5cee6;
+            border-radius: 100px;
+            padding: 34px;
+
+            p{
+                box-sizing: border-box;
+                font-size: 16px;
+                font-weight: 800;
+                font-family: "微軟正黑體",serif;
+                line-height: 2;
+                //letter-spacing: 0px;
+                padding: 10px 55px;
+                text-align:justify;
+
+                &.p1{
+                    //height: 510px
+                    padding-bottom: 5%;
+                }
+
+                &.p2{
+                    //height: 880px;
+                    padding-bottom: 5%;
+                }
+
+                &.p3{
+                    //height: 410px;
+                    padding-bottom: 7%;
+                }
+
+                span{
+                    background-color: rgba(253, 255, 137, 0.938);
+                }
+            }
+        }
+
+        .buy{
+            cursor: pointer;
+            position: absolute;
+            bottom: 160px;
+            left: 320px;
+        }
+    }
+}
+
+.T3 {
+    background: url('../img/T3_bg.png')center center no-repeat;
+    background-size: cover;
+    .inner{
+        height: 1340px;
+        padding-top: 200px;
+
+        .t1,.t2,.t3,.t4{
+            position: absolute;
+        }
+        .t1{
+            top: 390px;
+            left: 60px;
+            animation-delay: 0.1s;
+        }
+        .t2{
+            top: 685px;
+            left: 60px;
+            animation-delay: 0.3s;
+        }
+        .t3{
+            top: 390px;
+            right: 60px;
+            animation-delay: 0.2s;
+        }
+        .t4{
+            top: 685px;
+            right: 60px;
+            animation-delay: 0.5s;
+        }
+
+        .buy{
+            position: absolute;
+            cursor: pointer;
+            bottom: 130px;
+            left: 325px;
+        }
+
+        .copyright{
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+}
+
+
+@keyframes float {
+    to {
+        transform: translateY(-5%);
+    }
+}
+.float{
+    animation: float 1s ease infinite alternate;
+}
